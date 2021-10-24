@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        html,body {
+            margin: 0;
+            padding: 0;
+        }
+
+        #container {
+            position: relative;
+            background-color: blueviolet;
+            width: 400px;
+            height: 200px;
+            margin: auto;
+        }
+
+        #germanyflag {
+            float: left;
+            width: 250px;
+            height: 150px;
+        }
+
+        .germany {
+            float: left;
+            width: 250px;
+            height: 50px;
+        }
+
+        #black {
+            background-color: black;
+        }
+
+        #red {
+            background-color: red;
+        }
+
+        #yellow {
+            background-color: yellow;
+        }
+
+        #white {
+            background-color: white;
+        }
+
+        #circleGer {
+            height: 150px;
+            width: 150px;
+            float: left;
+            overflow: hidden;
+            border-radius: 50%;
+        }
+
+
+        #greenlandFlagCircle {
+            margin-left: 30px;
+            height: 70px;
+            width: 70px;
+            overflow: hidden;
+            border-radius: 50%;
+            position: absolute;
+            margin-top: 40px;
+        }
+
+        .greenland {
+            float: left;
+            width: 250px;
+            height: 75px;
+        }
+
+        .greenlandflag {
+            float: left;
+            width: 70px;
+            height: 35px;
+        }
+
+        #rectangle {
+            width: 300px;
+            position: relative;
+        }
+
+        #circleGre {
+            height: 150px;
+            width: 150px;
+            overflow: hidden;
+            right: 10%;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div id="circleGer">
+            <div id="germanyflag">
+                <div class="germany" id="black"></div>
+                <div class="germany" id="red"></div>
+                <div class="germany" id="yellow"></div>
+            </div>
+        </div>
+        <br>
+        <div id="circleGre">
+            <div id="rectangle">
+                <div class="greenland" id="white"></div>
+                <div class="greenland" id="red"></div>
+
+                <div id="greenlandFlagCircle">
+                    <div class="greenlandflag" id="red"></div>
+                    <div class="greenlandflag" id="white"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
