@@ -1,0 +1,19 @@
+#backimg{
+position:absolute;
+width:100%;
+height: 100%;
+background-image: url("FB_IMG_1578979496578.jpg");
+background-size: cover;
+}
+#wrap
+{position: relative;
+float: left;
+width: 100%;
+border: 1px solid red;
+}
+#authorinfo{
+    position:fixed;
+    width:60%;
+    height: 60%;
+    background-image: linear-gradient(#146dc7,#3cb7fa);
+}
