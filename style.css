@@ -12,8 +12,10 @@ width: 100%;
 border: 1px solid red;
 }
 #authorinfo{
-    position:fixed;
-    width:60%;
+    display: none;
+    position: fixed; 
+    width: 60%;
     height: 60%;
-    background-image: linear-gradient(#146dc7,#3cb7fa);
+    background-image:linear-gradient(#0b6fc2,#48c2fa);
+    z-index: 1;
 }
