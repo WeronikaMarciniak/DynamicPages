@@ -1,21 +1,83 @@
-#backimg{
-position:absolute;
-width:100%;
-height: 100%;
-background-image: url("FB_IMG_1578979496578.jpg");
-background-size: cover;
+#backimg {
+    position:absolute;
+    width:100%;
+    height: 100%;
+    background-image: url("FB_IMG_1578979496578.jpg");
+    background-size: cover;
+    }
+#wrap {
+    position: relative;
+    text-align: center;
+    float: left;
+    width: 100%;
 }
-#wrap
-{position: relative;
-float: left;
-width: 100%;
-border: 1px solid red;
-}
-#authorinfo{
-    display: none;
+
+#authorinfo {
+  
     position: fixed; 
     width: 60%;
     height: 60%;
     background-image:linear-gradient(#0b6fc2,#48c2fa);
     z-index: 1;
+}
+#close {
+    float: right;
+}
+.letter {
+    margin: 5px;
+    background: #286fe0;
+    box-shadow: 5px 5px 5px black;
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 15px;
+    border: 3px solid #aac8fd;
+    font-size: 50px;
+    font-family: Arial;
+}
+
+.hidden {
+    position: relative;
+    background: #FFFFFF;
+    width: 50px;
+    height: 50px;
+}
+
+.hidden:after {
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    content: "";
+    background: #FFFFFF;
+}
+
+#zycie {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-family: Arial
+}
+
+#punkty {
+    position: absolute;
+    top: 30px;
+    right: 10px;
+    font-family: Arial;
+}
+
+#wrong{
+    position:absolute;
+    width: auto;
+    left:40%;
+    text-decoration: line-through;
+    font-size: 25px;
+    background-color:#48c2fa;
+    opacity:50%;
+    font-family: Arial;
 }
