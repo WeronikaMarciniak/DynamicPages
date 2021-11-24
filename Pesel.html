@@ -1,16 +1,23 @@
-<!DOCTYPE html>
+<html lang="pl">
+
 <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+
+
 </head>
 <body>
 <form>
-   Rok <input type="number" id="year">
-   Miesiąc <input type="number" id="month">
-   Dzień <input type="number" id="day">
-   Pesel(5 ostatnich cyfr)<input type="number" id="pesel">
+   Rok <input type="text" id="year" pattern="[0-9]{4,4}"value="" onkeypress="return /[0-9]/i.test(event.key)" maxlength="4">
+   Miesiąc <input type="text" id="month"pattern="[0-2]{1,2}" value="" onkeypress="return /[0-9]/i.test(event.key)" maxlength="2">
+   Dzień <input type="text" id="day" pattern="[0-9]{1,2}" value="" onkeypress="return /[0-9]/i.test(event.key)" maxlength="2">
+   Pesel(5 ostatnich cyfr)<input type="text" id="numbers" pattern="[0-9]{1,2}" value="" onkeypress="return /[0-9]/i.test(event.key)" maxlength="5">
    <br>
-   <button id="validate">Sprawdź</button>
-   <button id="show">Wyświetl wszystko</button>
-   <button id="find">Znajdź </button>
-</form>
+    <button id="validate">Waliduj</button>
+    <button id="show">Pokaż</button>
+    <button id="find">Znajdź</button>
+   </form>
+  <div id="results"></div>
+<script src="main.js"></script>
+
 </body>
-</html>
